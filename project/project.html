@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+    <head>
+        <title>PROJECT</title>
+        <style>
+
+    *{
+        background-color: honeydew;
+    }
+    
+            
+        
+        .home{
+               list-style-type: none;
+               margin: 0px;
+               padding: 0px;
+               overflow: hidden;
+               background-color: black;
+               
+               
+
+           }
+           
+           
+           li{
+               float: right;
+           }
+           li a{
+               display: block;
+               padding: 14px 16px;
+               text-align: center;
+               background-color: black;
+               color: white;
+               text-decoration: none;
+               
+           }
+           li a:hover:not(.active){
+               background-color: blue;
+           }
+           .active{
+               background-color: blue;
+           }
+           .pic{
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            #About{
+                
+                flex-direction: row;
+                text-align: center;
+                margin: 0 auto;
+                padding: 100px 20px;
+
+
+            }
+           #Contact {
+                
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                box-sizing: border-box;
+            
+           }
+               
+                
+
+            
+
+        
+            #gallery{
+                flex-direction: row;
+                text-align: center;
+                margin: 0 auto;
+                padding: 100px 50px;
+                max-width: i200px;
+
+
+            }
+           
+
+             
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul  class="home">
+             <li style="float: left;"><a  href="#home">Home</a></li>
+             <li><a  href="#Contact">Contact me</a></li>
+             <li><a  href="#gallery">Picture gallery</a></li>
+             <li ><a  href="#About">About</a></li>
+            </ul>
+        </div>
+         
+           <img src="image101.jpg"  class="pic" width="450" height="450">
+
+           <section>
+               <div id="About">
+                   <h1>About Me</h1>
+                   <h2>My Name is Abdulrahman Islamiyat. I am a web designer.<br>
+                    i am from ogun state Nigeria.i am courteous and enthusiastic.
+                    </h2>
+                    <input type="button" value="Back to home" onclick="history.back()">
+              </div>
+           </section>
+           
+           <section id="gallery">
+               <div class="gallery container">
+                   <h1>Gallery</h1>
+                 <img src="image7.jpg" width="250"  height="180">  <img src="image8.jpg"  width="250" height="180">
+                 <img src="image9.jpg" width="250"  height="180">  <img src="image10.jpg" width="250"  height="180"> <br>
+                 <br>
+                 
+                 <input type="button" value="Back to home" onclick="history.back()">
+                
+               </div>
+           </section> 
+         
+    
+        <section>
+            <div id="Contact">
+                <h1 class="me">Contact me via</h1>
+                <h2>Phone:</h2>
+                <h4>09035327811</h4>
+                <h2>Email:</h2>
+                <a href="abdulrahmanislamiyat2@gmail.com">abdulrahmanislamiyat2@gmail.com</a>
+                <br>
+
+                <form action="" class="form">
+                    <input type="text"    name="Name"  class="input" placeholder="Enter your Name" ><br>
+                    <br>
+                    <input type="text"    name="Email"  class="input" placeholder="Enter your Email" ><br>
+                    <br>
+                    <textarea name="msg"  id="" cols="30" rows="10" placeholder="Enter your message"></textarea><br>
+                    <br>
+                    <input type="submit" value="send" id="send"><br>
+                    <br>
+                    <input type="button" value="Back to home" onclick="history.back()">
+                      
+                </form>
+
+            </div>
+        </section>
+            
+                    
+    </body>
+    
+</html>
